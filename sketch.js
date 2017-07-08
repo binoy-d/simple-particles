@@ -36,7 +36,7 @@ function Particle() {
 
   this.display = function() {
     noStroke();
-    fill(255,200-(this.age*2));
+    fill(random(0,255),random(0,255),random(0,255),250-(this.age*2));
     ellipse(this.x, this.y, this.diameter, this.diameter);
   }
 }
