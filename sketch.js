@@ -28,8 +28,8 @@ function Particle() {
   this.color = {
    'r':random(0,255),
     'g':random(0,255),
-    'b':random(0,255); 
-  }
+    'b':random(0,255)
+  };
 
   this.move = function() {
     this.x += sin(this.angle)*this.speed;
