@@ -26,9 +26,9 @@ function Particle() {
   this.angle = random(0,360);
   this.speed = random(0.1,4);
   this.color = {
-   'r':random(0,255),
-    'g':random(0,255),
-    'b':random(0,255)
+   'r':random(50,200),
+    'g':random(50,200),
+    'b':random(50,200)
   };
 
   this.move = function() {
@@ -40,7 +40,7 @@ function Particle() {
 
   this.display = function() {
     noStroke();
-    fill(this.color.r,this.color.g, this.color.b, 250-(this.age*2));
+    fill(this.color.r,this.color.g, this.color.b, 200-(this.age*1.5));
     ellipse(this.x, this.y, this.diameter, this.diameter);
   }
 }
