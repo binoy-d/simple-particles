@@ -1,7 +1,7 @@
 var objects = [];
 var b;
 function setup() {
-  createCanvas(1080, 720);
+  createCanvas(windowwidth, windowheight);
   angleMode(DEGREES);
 }
 
@@ -23,7 +23,7 @@ function Particle() {
   this.y = mouseY;
   this.age = 0;
   this.diameter = random(10, 30);
-  this.angle = random(0,90);
+  this.angle = random(0,360);
   this.speed = random(0.1,4);
 
 
