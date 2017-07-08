@@ -1,7 +1,7 @@
 var objects = [];
 var b;
 function setup() {
-  createCanvas(windowwidth, windowheight);
+  createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
 }
 
